@@ -1,0 +1,3 @@
+installing spatie for permission
+
+---google the site(spatie roles and permissions)  and follow instructions   
