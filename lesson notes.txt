@@ -1,0 +1,18 @@
+Two ways to use middleware:
+*web.php -- ->middleware(AdminMiddleware::class);
+*inside bootstrap folder->app.php --- 
+
+->withMiddleware(function (Middleware $middleware) {
+        $middleware->alias([
+            'is_Admin' => AdminMiddleware::class
+        ]);
+
+
+--------inside middleware u can create conditions for a specific page eg user-page for this case
+
+-------middleware parameters
+
+------if(Auth::user()->hasRole('admin') == $role) { }  =>if authenticated user has role of admmin
+
+
+
